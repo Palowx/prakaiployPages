@@ -11,7 +11,7 @@
     <div class="header">
         <h1>Prakaiploy's Pages</h1>
         <button class="btn">
-            <img src="images/menu.png" alt="Menu">
+            <img src="images/laptop.png" alt="Menu">        
         </button>
     </div>
     <div >
@@ -22,27 +22,65 @@
             <a href="tu-life.html">TU Life</a>
         </div>
         <div class="main-content">
-            <p>Showcase</p>
+            <h3>Project Showcase</h3>
             <div class="polaroid">
-                <img src="images/menu.png" alt="5 Terre" style="width:100%">
+                <img class="mySlides" src="images/kinraidee_main.jpg" alt="Kin Rai Dee" style="width:100%">
+                <img class="mySlides" src="images/kinraidee_firsttimelogin.jpg" alt="Kin Rai Dee" style="width:100%">
+                <img class="mySlides" src="images/kinraidee_food_review.jpg" alt="Kin Rai Dee" style="width:100%">
+                <img class="mySlides" src="images/kinraidee_store_review.jpg" alt="Kin Rai Dee" style="width:100%">
                 <div class="container">
-                <p>Expense Tracker</p>
+                <a href="https://github.com/Palowx/KinRaiDee">Kin Rai Dee - Software Quality Assurance Project</a>
                 </div>
               </div>
               
               <div class="polaroid">
-                <img src="images/menu.png" alt="Norther Lights" style="width:100%">
+                <img class="mySlides2" src="images/et_main.jpg" alt="Expense Tracker" style="width:100%">
+                <img class="mySlides2" src="images/et_history.jpg" alt="Expense Tracker" style="width:100%">
+                <img class="mySlides2" src="images/et_lightmode.jpg" alt="Expense Tracker" style="width:100%">
                 <div class="container">
-                <p>Kin Rai Dee</p>
+                <a href="https://github.com/Palowx/CS266" >Expense Tracker - Database Project</a>
                 </div>
               </div>
         </div>
         <div class="right">
-            <p>Content</p> 
+            
         </div>
     </div>
     <footer>
-        Footer
+        Contact: Prakaiploy Siritunyaluk 6409610653
+        prakaiploy.sir@dome.tu.ac.th
     </footer>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+
+        var slideIndex2 = 0;
+        carousel2();
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > x.length) {slideIndex2 = 1}
+                x[slideIndex2-1].style.display = "block";
+            setTimeout(carousel2, 2000);
+        }
+
+    </script>
 </body>
 </html>

@@ -13,7 +13,7 @@ body{
 
 
 .header{
-    background-color: aqua;
+    background-color: rgb(49, 45, 53);
     height: 10%;
     width: 100%;
     display:flex;
@@ -22,6 +22,7 @@ body{
 .header h1{
     font-size: larger;
     padding-left: 10px;
+    color:rgb(255, 246, 233);
 }
 
 .btn{
@@ -38,69 +39,134 @@ body{
 }
 
 .left{
-    background-color: brown;
+    /* background-color: rgb(255, 255, 255); */
     /* width: 20%; */
     text-align: center;
-    margin-bottom: 2%;
+    margin-top: 7px;
+    
 }
 .left a{
-    background-color: #e5e5e5;
+    background-color: rgb(63, 59, 68);
     padding: 8px;
-    margin-top: 7px;
+    margin: 0 auto;
     display: block;
-    width: 100%;
-    color: black;
+    width: 90%;
+    border-radius: 10px;
+    color:#e5e5e5;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 
 .main-content{
-    background-color: chocolate;
+    background-color: rgb(63, 59, 68);
     /* width: 60%; */
-    text-align: center;
+    text-align:center;
     margin-bottom: 2%;
-    padding: 8px;
+    padding: 10px;
+    padding-top: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #e5e5e5;
+    border-left: 10px;
+    border-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 .main-content img{
     align-items: center;
     width: 30%;
+    margin-top: 10px;
 }
 
+.main-content h3{
+    margin: 0;
+}
+
+.main-sub img{
+    align-items: center;
+    width: 80%;
+}
+.main-content .resume{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content a{
+    display: block;
+}
+
+
 .right{
-    background-color: forestgreen;
+    /* background-color: rgb(229, 229, 230); */
     /* width: 20%; */
     text-align: center;
     padding: 8px;
 }
 footer{
-    background-color: blueviolet;
+    background-color:rgb(49, 45, 53);
     text-align: center;
-    padding: 5px;
+    padding-top: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
     height: 5%;
-
+    color:#e5e5e5;
 }
 
-div.polaroid {
-    width: 50%;
+/* showcase */
+div .polaroid {
+    width: 85%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 2px 4px;
+    margin: 25px;
 }
 
+div.polaroid:hover {
+    cursor: pointer;
+}
+
+/* div.polaroid:hover::after {
+    content: "Click here to see github repository"; 
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+
+/* mobile first */
 /* surface pro 7 tablet */
 @media screen and (min-width: 900px){
     h1{
-        font-size:large;
+        font-size:x-large;
     }
     .left{
         width: 20%;
         float: left;
+        margin-bottom: 2%;
+        font-size: medium;
+        
+    }
+    .left a{
+        margin-top: 7px;
     }
     .main-content{
         width: 60%;
         float: left;
+        font-size: large;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .right{
         width: 20%;
@@ -108,22 +174,39 @@ div.polaroid {
     }
 }
 
-/* Desktop size 1024*786 to 1980*1080 */
+
+/* Desktop size 1024*786 */
 @media screen and (min-width: 1024px){
-    h1{
-        font-size:large;
-    }
     .left{
         width: 20%;
         float: left;
+        margin-bottom: 2%;
+        font-size: medium;
+        
+    }
+    .left a{
+        margin-top: 7px;
     }
     .main-content{
         width: 60%;
         float: left;
+        font-size: large;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .right{
         width: 20%;
         float:left;
     }
+}
+
+@media screen and (min-width: 1500px){
+    .header{
+        font-size: xx-large;
+    }
+    footer{
+        font-size: large;
+    }
+    
 }
 
